@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kitap Sepeti</title>
+    <meta name="Description" content="Kitap Sepeti">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/tiny-slider.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    @@include('./shared/header.html')
+    <main>
+        <section class="banner">
+            <div class="container">
+                <a href="#"><img src="./images/banner.png" alt="kpss" class="img-fluid"></a>
+            </div>
+        </section>
+        <section class="category">
+            <div class="container">
+                <div class="category-inner">
+                    <a href="#"><i class="fa fa-book"></i>Kitap</a>
+                    <a href="#"><i class="fa fa-child"></i>Hobi & Oyuncak</a>
+                    <a href="#"><i class="fa fa-paint-brush"></i>Kırtasiye</a>
+                    <a href="#"><i class="fa fa-book"></i>Kampanya</a>
+                    <a href="#"><i class="fa fa-lock"></i>Kişisel Ürünler</a>
+                    <a href="#"><i class="fa fa-camera"></i>Elektronik</a>
+                </div>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="slider-campage">
+                            <div id="sliderCampage">
+                                <div class="slider-campage-item">
+                                    <img src="./images/kitap.png" alt="korkma iyi bir annesin">
+                                    <h3>Korkma !<br> İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div class="mb-2">
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                    <div class="date">
+                                        <span>12<small>GÜN</small></span>
+                                        <span>16<small>SAAT</small></span>
+                                        <span>42<small>DAKİKA</small></span>
+                                        <span>35<small>SANİYE</small></span>
+                                    </div>
+                                </div>
+                                <div class="slider-campage-item">
+                                    <img src="./images/kitap.png" alt="korkma iyi bir annesin">
+                                    <h3>Korkma !<br> İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div class="mb-2">
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                    <div class="date">
+                                        <span>12<small>GÜN</small></span>
+                                        <span>16<small>SAAT</small></span>
+                                        <span>42<small>DAKİKA</small></span>
+                                        <span>35<small>SANİYE</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="slider-main">
+                            <div id="sliderMain">
+                                <a href="#"><img src="./images/slidermain2.png" alt="korkma iyi bir annesin"></a>
+                                <a href="#"><img src="./images/slidermain2.png" alt="korkma iyi bir annesin"></a>
+                            </div>
+                        </div>
+                        <div class="slider-banner">
+                            <a href="#"><img src="./images/sliderbanner1.png" alt="slider bannner"></a>
+                            <a href="#"><img src="./images/sliderbanner2.png" alt="slider bannner"></a>
+                            <a href="#"><img src="./images/sliderbanner3.png" alt="slider bannner"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="library">
+            <div class="container">
+                <div class="library-tab">
+                    <div class="nav flex-column" id="library-tab" role="tablist" aria-orientation="vertical">
+                        <a class="active" id="library-home-tab" data-toggle="pill" href="#library-home" role="tab" aria-controls="library-home" aria-selected="true">
+                            <i class="fa fa-list"></i>
+                            <div>
+                                <strong>Sınav Kitapları</strong>
+                                <span>Sınavlara Hazırlıkta Tüm Kaynaklar</span>
+                            </div>
+                        </a>
+                        <a id="library-profile-tab" data-toggle="pill" href="#library-profile" role="tab" aria-controls="library-profile" aria-selected="false">
+                            <i class="fa fa-book"></i>
+                            <div>
+                                <strong>Biyografi</strong>
+                                <span>Sınavlara Hazırlıkta Tüm Kaynaklar</span>
+                            </div>
+                        </a>
+                        <a id="library-messages-tab" data-toggle="pill" href="#library-messages" role="tab" aria-controls="library-messages" aria-selected="false">
+                            <i class="fa fa-heart"></i>
+                            <div>
+                                <strong>Aşk Romanları</strong>
+                                <span>Sınavlara Hazırlıkta Tüm Kaynaklar</span>
+                            </div>
+                        </a>
+                        <a id="library-settings-tab" data-toggle="pill" href="#library-settings" role="tab" aria-controls="library-settings" aria-selected="false">
+                            <i class="fa fa-pencil"></i>
+                            <div>
+                                <strong>Edebiyat Eserleri</strong>
+                                <span>Sınavlara Hazırlıkta Tüm Kaynaklar</span>
+                            </div>
+                        </a>
+                        <a id="library-messages-tab2" data-toggle="pill" href="#library-messages2" role="tab" aria-controls="library-messages2" aria-selected="false">
+                            <i class="fa fa-mortar-board"></i>
+                            <div>
+                                <strong>Aşk Romanları</strong>
+                                <span>Sınavlara Hazırlıkta Tüm Kaynaklar</span>
+                            </div>
+                        </a>
+                        <a id="library-settings-tab2" data-toggle="pill" href="#library-settings2" role="tab" aria-controls="library-settings2" aria-selected="false">
+                            <i class="fa fa-blind"></i>
+                            <div>
+                                <strong>Edebiyat Eserleri</strong>
+                                <span>Sınavlara Hazırlıkta Tüm Kaynaklar</span>
+                            </div>
+                        </a>
+                        <a id="library-messages-tab3" data-toggle="pill" href="#library-messages3" role="tab" aria-controls="library-messages3" aria-selected="false">
+                            <i class="fa fa-cut"></i>
+                            <div>
+                                <strong>Aşk Romanları</strong>
+                                <span>Sınavlara Hazırlıkta Tüm Kaynaklar</span>
+                            </div>
+                        </a>
+                        <a id="library-settings-tab3" data-toggle="pill" href="#library-settings3" role="tab" aria-controls="library-settings3" aria-selected="false">
+                            <i class="fa fa-balance-scale"></i>
+                            <div>
+                                <strong>Edebiyat Eserleri</strong>
+                                <span>Sınavlara Hazırlıkta Tüm Kaynaklar</span>
+                            </div>
+                        </a>
+                        <a class="more" href="">+ Diğerlerini Görüntüle</a>
+                    </div>
+                    <div class="tab-content" id="library-tabContent">
+                        <div class="tab-pane fade show active" id="library-home" role="tabpanel" aria-labelledby="library-home-tab">
+                            <div class="library-content">
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap1.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap2.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap3.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap4.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap5.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap6.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap7.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap8.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="library-profile" role="tabpanel" aria-labelledby="library-profile-tab">
+                            <div class="library-content">
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap1.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="library-messages" role="tabpanel" aria-labelledby="library-messages-tab">
+                            <div class="library-content">
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap2.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="library-settings" role="tabpanel" aria-labelledby="library-settings-tab">
+                            <div class="library-content">
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap3.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="library-messages2" role="tabpanel" aria-labelledby="library-messages2-tab">
+                            <div class="library-content">
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap5.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="library-settings2" role="tabpanel" aria-labelledby="library-settings2-tab">
+                            <div class="library-content">
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap6.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="library-messages3" role="tabpanel" aria-labelledby="library-messages3-tab">
+                            <div class="library-content">
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap7.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="library-settings3" role="tabpanel" aria-labelledby="library-settings3-tab">
+                            <div class="library-content">
+                                <a href="#" class="library-item">
+                                    <img src="./images/kitap8.png" alt="İyi bir annesin">
+                                    <h3>İyi Bir Annesin</h3>
+                                    <strong>Saniye Kangal</strong>
+                                    <div>
+                                        <span class="old mr-1">35.99 TL</span>
+                                        <span class="new">35.99 TL</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="library-tab-footer">
+                        <a href="#">Yeni Çıkan İndimli Kitaplar</a>
+                        <a href="#">Kapıda Ödeme Kitap</a>
+                        <a href="#">Ücretsiz Kargo Kitaplar</a>
+                        <a href="#">Tavsye Kitaplar</a>
+                        <a href="#">Hediyelik Kitaplar</a>
+                        <a href="#">9.90 Kitaplar</a>
+                        <a href="#">Kargo Ödeyen Kitaplar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('./shared/footer.html')
+    <script src="./js/app-min.js"></script>
+</body>
+
+</html>
